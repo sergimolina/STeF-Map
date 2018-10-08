@@ -2,7 +2,7 @@
 Implementation of a time-dependent probabilistic map able to model and predict flow patterns of people in indoor environments. The proposed representation models the likelihood of motion direction on a grid-based map by a set of harmonic functions, which efficiently capture long-term variations of crowd movements over time [1].
 
 
-## TUTORIAL:
+## Tutorial:
 ### 1. Download data 
 Link: https://mega.nz/#!EGoCGaQZ!IPYlx3P8aJPksK9-U5q3YrxUAE_zUoeCauz-0STm8Hc
 
