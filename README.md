@@ -11,7 +11,7 @@ This data is a downsampled version of the first 4 days of the dataset described 
 ### 2. Install and launch FreMEn
 Link:https://github.com/sergimolina/fremen
 
-Download the fremenarray package for ros, compile and run it (*rosrun fremenarray frmenearray*).
+Download the fremenarray package for ros, compile and run it (*rosrun fremenarray fremenarray*).
 
 ### 3. Execute main.py
 This main script executes the full pipeline of the system (create the histograms for every interval of time specified, load the histograms for every cell to FreMEn, and predict the behavior of the people in the map for futtures times [1]). Before running the script be sure the fremenarray node explained in step 2 is running.
@@ -25,7 +25,10 @@ The plotting script basically takes in each time, the orientation with the highe
 
 ## Output
 # Predicted flow map after two weeks of tranning
-![](./img/predicted_map.gif)
+![](./img/predicted_map.gif "Predicted flow map after two weeks of tranning")
+# Predicted probabilites for each orientation during 24h using a order 2 model
+![alt-text-1](https://github.com/sergimolina/Flow-Map/blob/master/img/probabilities_cell.png "Probabilities for each orientaiton during one day") ![alt-text-2](https://github.com/sergimolina/Flow-Map/blob/master/img/cell_orientations.png "Orientation discretitsation used in each cell")
+
 
 # Probabilities for all the orientation of a single cell
 
