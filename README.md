@@ -24,11 +24,13 @@ After executing the main script, 5 extra files should be created, 4 of them cont
 The plotting script basically takes in each time, the orientation with the higher probability and plots an arrow for that direction in the corresponding cell.
 
 ## Output
-# Predicted flow map after two weeks of tranning
+### Predicted flow map after two weeks of tranning
 ![](./img/predicted_map.gif "Predicted flow map after two weeks of tranning")
-# Predicted probabilites for each orientation during 24h using a order 2 model
-![alt-text-1](https://github.com/sergimolina/Flow-Map/blob/master/img/probabilites_cell.png "Probabilities for each orientaiton during one day") ![alt-text-2](https://github.com/sergimolina/Flow-Map/blob/master/img/cell_orientations.png "Orientation discretitsation used in each cell")
+### Predicted probabilites for each orientation during 24h using a order 2 model
 
+Probabilities            |  Orientations
+:-------------------------:|:-------------------------:
+![alt-text-1](https://github.com/sergimolina/Flow-Map/blob/master/img/probabilites_cell.png "Probabilities for each orientation during one day") |  ![alt-text-2](https://github.com/sergimolina/Flow-Map/blob/master/img/cell_orientations.png "Orientations used in each cell")
 
 # Probabilities for all the orientation of a single cell
 
