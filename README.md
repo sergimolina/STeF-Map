@@ -8,10 +8,10 @@ Implementation of a time-dependent probabilistic map able to model and predict f
 
 
 ## TUTORIAL:
-# 1. Download data 
+### 1. Download data 
 Link: https://mega.nz/#!EGoCGaQZ!IPYlx3P8aJPksK9-U5q3YrxUAE_zUoeCauz-0STm8Hc
 This data is a downsampled version of the first 4 days of the dataset described in http://www.irc.atr.jp/crest2010_HRI/ATC_dataset/. We take the timestamp, x , y, and angle of each detection.
 
-# 2. FreMen 
+### 2. FreMen 
 
-# 3. Execute main.py
+### 3. Execute main.py
