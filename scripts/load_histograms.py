@@ -7,9 +7,6 @@ from std_msgs.msg import String
 from fremenarray.msg import FremenArrayActionGoal,FremenArrayActionResult
 import os
 
-def result_callback(data):
-	print data.result.message
-
 if __name__ == '__main__':
 
 	file_name = sys.argv[1]
