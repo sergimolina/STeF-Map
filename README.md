@@ -1,5 +1,5 @@
 # Flow-Map
-Implementation of a time-dependent probabilistic map able to model and predict flow patterns of people in indoor environments. The proposed representation models the likelihood of motion direction on a grid-based map by a set of harmonic functions, which efficiently capture long-term variations of crowd movements over time[1].
+Implementation of a time-dependent probabilistic map able to model and predict flow patterns of people in indoor environments. The proposed representation models the likelihood of motion direction on a grid-based map by a set of harmonic functions, which efficiently capture long-term variations of crowd movements over time [1].
 
 
 ## TUTORIAL:
@@ -8,7 +8,7 @@ Link: https://mega.nz/#!EGoCGaQZ!IPYlx3P8aJPksK9-U5q3YrxUAE_zUoeCauz-0STm8Hc
 
 This data is a downsampled version of the first 4 days of the dataset described in http://www.irc.atr.jp/crest2010_HRI/ATC_dataset/. We take the timestamp, x , y, and angle of each detection.
 
-### 2. Install and launch FreMEn
+### 2. Install and launch FreMEn [2]
 Link:https://github.com/sergimolina/fremen
 
 Download the fremenarray package for ros, compile and run it (*rosrun fremenarray fremenarray*).
@@ -39,3 +39,5 @@ For further questions or doubts: smolinamellado@lincoln.ac.uk
 
 ## References
 [1] S. Molina, G. Cielniak, T. Krajnik and T. Duckett. Modelling and Predicting Rhythmic Flow Patterns in Dyanmics Environments. In Towards  AutonomousRobotic Systems (TAROS), volume 10965, pages 135–146, 2018. 
+[2] T.Krajnik, J.P.Fentanes, J.Santos, T.Duckett: FreMEn: FreMEn: Frequency Map Enhancement for Long-Term Mobile Robot Autonomy in Changing Environments.IEEE Transactions on Robotics, 2017.
+
