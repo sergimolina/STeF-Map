@@ -12,4 +12,4 @@ Arguments: model order, times file name, output file name
 Arguments: predictions file name, rows number, cols number, cell row to plot, cell col to plot
 
 ### plot_flowmap.py
-Arguments: predictions file name, rows numner, cols number
+Arguments: predictions file name, rows number, cols number
