@@ -8,6 +8,8 @@ Link: https://mega.nz/#!EGoCGaQZ!IPYlx3P8aJPksK9-U5q3YrxUAE_zUoeCauz-0STm8Hc
 
 This data is a downsampled version of the first 4 days of the dataset described in http://www.irc.atr.jp/crest2010_HRI/ATC_dataset/. We take the timestamp, x , y, and angle of each detection.
 
+Put the 4 files in the data folder.
+
 ### 2. Install and launch FreMEn [2]
 Link:https://github.com/sergimolina/fremen
 
