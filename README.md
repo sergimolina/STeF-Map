@@ -41,5 +41,6 @@ For further questions or doubts: smolinamellado@lincoln.ac.uk
 
 ## References
 [1] S. Molina, G. Cielniak, T. Krajnik and T. Duckett. Modelling and Predicting Rhythmic Flow Patterns in Dyanmics Environments. In Towards  AutonomousRobotic Systems (TAROS), volume 10965, pages 135–146, 2018. 
+
 [2] T.Krajnik, J.P.Fentanes, J.Santos, T.Duckett: FreMEn: FreMEn: Frequency Map Enhancement for Long-Term Mobile Robot Autonomy in Changing Environments.IEEE Transactions on Robotics, 2017.
 
