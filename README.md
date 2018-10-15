@@ -18,7 +18,7 @@ Download the fremenarray package for ros, compile and run it (*rosrun fremenarra
 ### 3. Execute main.py
 This main script executes the full pipeline of the system (create the histograms for every interval of time specified, load the histograms for every cell to FreMEn, and predict the behavior of the people in the map for futtures times [1]). Before running the script be sure the fremenarray node explained in step 2 is running.
 
-In the scripts folder all the scripts called from the main file are included, and can be called independently. This main scripts shows the arguments and the order to be executed in order to load 4 days of data.
+In the scripts folder all the scripts called from the main file are included, and can be called independently. This main script shows the arguments and the order to be executed in order to load 4 days of data.
 
 ### 4. Plot the flow map
 After executing the main script, 5 extra files should be created, 4 of them containing the histograms of each day, and 1 file (*predicted_20121107_order1.txt*) containing the probabilities for each cell and orientation of the map. 
