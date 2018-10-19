@@ -20,7 +20,7 @@ This main script executes the full pipeline of the system (create the histograms
 
 In the scripts folder all the scripts called from the main file are included, and can be called independently. This main script shows the arguments and the order to be executed in order to load 4 days of data.
 
-### 4. Plot the flow map
+### 4. Plot the spatio temporal flow map
 After executing the main script, 5 extra files should be created, 4 of them containing the histograms of each day, and 1 file (*predicted_20121107_order1.txt*) containing the probabilities for each cell and orientation of the map. 
 
 The plotting script basically takes in each time, the orientation with the higher probability and plots an arrow for that direction in the corresponding cell.
