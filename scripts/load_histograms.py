@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
 			current_line = line.split(',')
 			timestamp = int(float(current_line[0]))
-			for i in range(1,len(current_line)-1):
+			for i in range(1,len(current_line)):
 				states.append(float(current_line[i]))
 				
 			frem_msg.goal.operation = 'add'

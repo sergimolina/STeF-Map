@@ -84,7 +84,8 @@ if __name__ == '__main__':
 		bin_count_matrix_1d = np.reshape(bin_count_matrix,(1,rows*cols*8))
 		for i in range(0,rows*cols*8):
 			ofile.write(str(int(bin_count_matrix_1d[0][i])))
-			ofile.write(",")
+			if i != rows*cols*8-1:
+				ofile.write(",")
 		ofile.write("\n")
 
 		# Restart matrix
