@@ -24,7 +24,7 @@ if __name__ == '__main__':
 	with open(predictions_file,"r") as file:
 		for line in file:
 			current_line = line.split(',')
-			for i in range(1,len(current_line)-1):
+			for i in range(1,len(current_line)):
 				predictions.append(float(current_line[i]))
 
 			bin_count_matrix[:,:,:,interval] = np.reshape(predictions,(rows,cols,8))	

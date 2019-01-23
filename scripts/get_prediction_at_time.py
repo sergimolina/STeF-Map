@@ -7,7 +7,7 @@ from fremenarray.msg import FremenArrayActionGoal,FremenArrayActionResult
 def result_callback(data):
 #	print data.result.probabilities
 	if len(data.result.probabilities)>0:
-		with open(predictions_file,"a") as rfile:
+		with open(predictions_file,"w") as rfile:
 			rfile.write(str(timestamp)+',')
 			for i in range(0,len(data.result.probabilities)):
 				if i != len(data.result.probabilities)-1:
@@ -20,7 +20,7 @@ def result_callback(data):
 if __name__ == '__main__':
 	
 	order = int(sys.argv[1])
-	time_file = sys.argv[2]
+	timestamp = int(sys.argv[2])
 	predictions_file = sys.argv[3]
 
 
@@ -33,12 +33,7 @@ if __name__ == '__main__':
 	# fill the message
 	frem_msg.goal.operation = 'predict'
 	frem_msg.goal.order = order
-	with open(time_file,"r") as file:
-		for line in file:	
-			current_line = line.split(',')
-			timestamp = int(float(current_line[0]))
+	frem_msg.goal.time = timestamp
 
-			frem_msg.goal.time = timestamp
-
-			pub.publish(frem_msg)
-			time.sleep(0.05)
+	pub.publish(frem_msg)
+	time.sleep(0.05)
