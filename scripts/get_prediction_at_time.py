@@ -36,4 +36,4 @@ if __name__ == '__main__':
 	frem_msg.goal.time = timestamp
 
 	pub.publish(frem_msg)
-	time.sleep(0.05)
+	time.sleep(0.1)
