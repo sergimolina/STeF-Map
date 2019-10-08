@@ -3,30 +3,31 @@ import sys
 import time
 import numpy as np
 import math
+from fremenarray.msg import FremenArrayAction,FremenArrayGoal
+import actionlib
+import rospy
 
 def get_map_at_time(time,order,xmin,xmax,ymin,ymax,cell_size):
 
 	rows = int((ymax - ymin)/cell_size)
 	cols = int((xmax - xmin)/cell_size)
 
-	predictions_file_name = 'tmp_map.txt'
+	rospy.init_node('fremenarray_client')
+	fremenarray_client = actionlib.SimpleActionClient('/fremenarray', FremenArrayAction)
+	fremenarray_client.wait_for_server()
+	
+	frem_msg=FremenArrayGoal()
+	frem_msg.operation = 'predict'
+	frem_msg.order = order
+	frem_msg.time = time
 
-	print("Making prediction...")
-	os.system('python get_prediction_at_time.py '+str(order)+' '+str(time)+' '+predictions_file_name)
+	fremenarray_client.send_goal(frem_msg)
+	
+	fremenarray_client.wait_for_result()
+	fremenarray_result = fremenarray_client.get_result()
+	stef_map = np.reshape(fremenarray_result.probabilities,(rows,cols,8))
+	return stef_map
 
-	bin_count_matrix = np.zeros((rows,cols,8))
-	predictions= []
-
-	with open(predictions_file_name,"r") as file:
-		for line in file:
-			current_line = line.split(',')
-			for i in range(1,len(current_line)):
-				predictions.append(float(current_line[i]))
-
-			bin_count_matrix[:,:,:] = np.reshape(predictions,(rows,cols,8))	
-			predictions = []
-
-	return bin_count_matrix
 
 def probabilities_at_location(x,y,stef_map,xmin,xmax,ymin,ymax,cell_size):
 	row = int(math.floor((-1/(ymax-(ymax-cell_size)))*y+(1-(-1/(ymax-(ymax-cell_size)))*ymax)))
