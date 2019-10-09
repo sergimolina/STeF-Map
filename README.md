@@ -13,7 +13,7 @@ Put the 4 files in the data folder.
 ### 2. Install and launch FreMEn [2]
 Link:https://github.com/sergimolina/fremen
 
-Download the fremenarray package for ros, compile and run it (*rosrun fremenarray fremenarray*).
+Download the fremenarray package for ros, compile and run it (```rosrun fremenarray fremenarray```).
 
 ### 3. Execute main.py
 This main script executes the full pipeline of the system (create the histograms for every interval of time specified, load the histograms for every cell to FreMEn, and predict the behavior of the people in the map for futtures times , and plot the predicted flowmap[1]). Before running the script be sure the fremenarray node explained in step 2 is running.
